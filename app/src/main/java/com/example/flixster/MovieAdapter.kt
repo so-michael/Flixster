@@ -1,6 +1,7 @@
 package com.example.flixster
 
 import android.content.Context
+import android.media.Image
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -31,6 +32,7 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
         private val ivPoster = itemView.findViewById<ImageView>(R.id.ivPoster)
+        private val ivBackdrop = itemView.findViewById<ImageView>(R.id.ivBackdrop)
         private val tvTitle = itemView.findViewById<TextView>(R.id.tvTitle)
         private val tvOverview = itemView.findViewById<TextView>(R.id.tvOverview)
 
@@ -38,6 +40,7 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
             tvTitle.text = movie.title
             tvOverview.text = movie.overview
             Glide.with(context).load(movie.posterImageUrl).into(ivPoster)
+            //Glide.with(context).load(movie.backdropUrl).into(ivBackdrop)
         }
     }
 
