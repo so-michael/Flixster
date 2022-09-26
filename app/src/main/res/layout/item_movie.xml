@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="4dp">
+    android:padding="4dp"
+    android:background="#303030">
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -25,6 +26,7 @@
         android:ellipsize="end"
         android:maxLines="2"
         android:text="Sample Movie Title"
+        android:textColor="@color/white"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivPoster"
@@ -40,6 +42,7 @@
         android:ellipsize="end"
         android:maxLines="5"
         android:text="Movie overview"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivPoster"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
