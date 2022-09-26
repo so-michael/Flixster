@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DetailActivity">
+    tools:context=".DetailActivity"
+    android:background="#303030">>
 
     <com.google.android.youtube.player.YouTubePlayerView
         android:id="@+id/player"
@@ -20,7 +21,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:text="Sample Movie Title" />
+        android:text="Sample Movie Title"
+        android:textColor="@color/white"/>
 
     <RatingBar
         android:id="@+id/rbVoteAverage"
@@ -34,6 +36,9 @@
         android:rating="4.5"
         android:numStars="10"
         android:stepSize="0.5"
+        android:progressTint="#E50914"
+        android:progressBackgroundTint="@color/black"
+        android:secondaryProgressTint="@android:color/transparent"
         />
 
     <TextView
@@ -44,5 +49,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="Sample Movie Overview"
+        android:textColor="@color/white"
         />
 </LinearLayout>
