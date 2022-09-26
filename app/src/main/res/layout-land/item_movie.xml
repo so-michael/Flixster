@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="4dp">
+    android:padding="4dp"
+    android:background="#303030">>
 
     <ImageView
         android:id="@+id/ivPoster"
@@ -27,7 +28,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivPoster"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Movie Title" />
+        tools:text="Movie Title"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/tvOverview"
@@ -39,5 +41,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ivPoster"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle"
-        tools:text="Lorem ipsum" />
+        tools:text="Sample movie overview"
+        android:textColor="@color/white"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
